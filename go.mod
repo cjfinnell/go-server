@@ -3,6 +3,7 @@ module github.com/cjfinnell/go-server
 go 1.18
 
 require (
+	github.com/julienschmidt/httprouter v1.3.0
 	github.com/spf13/cobra v1.4.0
 	github.com/stretchr/testify v1.7.1
 )
