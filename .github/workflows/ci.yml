@@ -1,6 +1,7 @@
 name: CI
 on: push
 jobs:
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -9,6 +10,7 @@ jobs:
       with:
         go-version: 1.18
     - run: make build
+
   test:
     runs-on: ubuntu-latest
     steps:
@@ -17,3 +19,9 @@ jobs:
       with:
         go-version: 1.18
     - run: make test
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: docker/build-push-action@v2.10.0
+
