@@ -1,4 +1,5 @@
-VERSION    ?= $(shell git rev-parse --short HEAD)
+VERSION      ?= $(shell git rev-parse --short HEAD)
+DOCKER_IMAGE ?= dev
 
 .PHONY: build
 build:
