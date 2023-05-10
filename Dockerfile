@@ -4,7 +4,7 @@ RUN apk update --no-cache && apk add git make --no-cache
 COPY . .
 RUN go mod vendor && make build
 
-FROM alpine:3.17 as release
+FROM alpine:3.18 as release
 WORKDIR /app
 RUN apk update --no-cache
 COPY --from=builder /build/go-server /app/go-server
