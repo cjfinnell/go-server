@@ -1,1 +1,3 @@
 /go-server
+# Added by goreleaser init:
+dist/

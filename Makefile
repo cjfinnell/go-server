@@ -11,8 +11,12 @@ docker:
 
 .PHONY: clean
 clean:
-	-@rm go-server
+	-@rm -rf go-server dist/
 
 .PHONY: test
 test:
 	go test -v ./...
+
+.PHONY: release-local
+release-local:
+	goreleaser release --snapshot --clean
