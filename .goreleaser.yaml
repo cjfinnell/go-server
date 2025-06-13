@@ -22,6 +22,29 @@ builds:
       - linux
       - windows
       - darwin
+      - js
+      - aix
+      - dragonfly
+      - freebsd
+      - illumos
+      - netbsd
+      - openbsd
+      - plan9
+      - solaris
+    goarch:
+      - amd64
+      - arm
+      - arm64
+      - wasm
+      - "386"
+      - mips
+      - mips64
+      - mips64le
+      - mipsle
+      - ppc64
+      - ppc64le
+      - riscv64
+      - s390x
 
 archives:
   - formats: [tar.gz]
