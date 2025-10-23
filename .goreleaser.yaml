@@ -45,6 +45,12 @@ builds:
       #- ppc64le
       #- riscv64
       #- s390x
+    goarm:
+      - "7"
+    goarm64:
+      - v9.0
+    goamd64:
+      - v3
 
 archives:
   - formats: [tar.gz]
