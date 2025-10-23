@@ -51,6 +51,9 @@ builds:
       - v9.0
     goamd64:
       - v3
+    ignore:
+      - goos: windows
+        goarch: arm
 
 archives:
   - formats: [tar.gz]
