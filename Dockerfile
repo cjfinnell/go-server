@@ -1,4 +1,4 @@
-ARG GO_VER=1.24
+ARG GO_VER=1.25
 
 FROM golang:${GO_VER}-alpine AS builder
 WORKDIR /build
