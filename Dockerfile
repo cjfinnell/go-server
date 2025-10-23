@@ -4,7 +4,7 @@ FROM --platform=${BUILDPLATFORM} golang:${GO_VER}-alpine AS builder
 WORKDIR /build
 RUN apk update --no-cache && apk add git make --no-cache
 COPY . .
-RUN go mod vendor && make build
+RUN make build
 
 FROM scratch AS release
 COPY --from=builder /build/go-server /go-server
