@@ -7,7 +7,7 @@ build:
 
 .PHONY: docker
 docker:
-	docker build -t $(DOCKER_IMAGE):$(VERSION) .
+	docker buildx build --platform linux/amd64,linux/arm64 -t $(DOCKER_IMAGE):$(VERSION) .
 
 .PHONY: clean
 clean:
